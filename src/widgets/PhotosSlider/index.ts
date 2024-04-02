@@ -1,0 +1,1 @@
+export { PhotosSlider } from './UI/PhotosSlider' 
