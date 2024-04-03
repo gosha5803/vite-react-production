@@ -1,19 +1,22 @@
-import './app/styles/main.scss'
-import { AppRouter } from './app/AppRouter'
-import { useContext, useEffect, useState } from 'react'
-import { Theme, ThemeContext } from './app/styles/theme/ThemeContext'
-import { useTheme } from './app/styles/theme/useTheme'
-import { classNames } from './shared/helpers/classNames'
+import 'app/styles/main.scss'
+import { AppRouter } from 'app/providers/router/AppRouter'
+import { useTheme } from 'app/providers/ThemeProviders/index'
+import { classNames } from 'shared/lib/classNames'
+import { Navbar } from 'widgets/NavBar'
+import { SideBar } from 'widgets/SideBar'
 
 function App() {
-  const {theme} = useTheme()
+  const { theme } = useTheme()
 
   return (
     <div
     className={classNames('app', {}, [theme])}
     >
-      <AppRouter>
-      </AppRouter>
+      <Navbar/>
+      <div className='content-page'>
+        <SideBar/>
+        <AppRouter/>
+      </div>
     </div>
   )
 }

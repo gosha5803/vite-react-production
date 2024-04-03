@@ -1,7 +1,6 @@
 import { FC } from "react";
 // import { PhotosSlider } from "../../../widgets/PhotosSlider";
 // import { MainPageLayout } from "../../../widgets/Layouts/MainPageLayout/MainPageLayout";
-import { NavLink } from "react-router-dom";
 
 const MainPage: FC = () => {
     return(
@@ -10,8 +9,7 @@ const MainPage: FC = () => {
             {/* <PhotosSlider/> */}
             {/* <button> */}
                 {/* О проекте */}
-                <h1>Main Page</h1>
-                <NavLink to={'/about'}>О проекте</NavLink>
+                <h1>Main Page From Master Branch</h1>
             {/* </button> */}
          {/* </MainPageLayout> */}
         </>
