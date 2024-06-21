@@ -9,4 +9,12 @@
     --font-size-l: 24px;
     --font-line-l: 32px;
     --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+
+    --font-weight-bold: 500;
+
+    //NavBar vars
+
+    --navbar-height: 5rem;
+    --sidebar-width-collapsed: 4rem;
+    --sidebar-width: 18rem;
 }

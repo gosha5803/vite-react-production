@@ -1,0 +1,27 @@
+@mixin button-styled($color, $property, $value, $alt) {
+    background-color: $color;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: .7rem;
+    transition: .3s;
+    
+    &:hover {
+        #{$property}: $value;
+        cursor: pointer;
+
+        &[type="submit"] {
+            #{$property}: $alt;
+        }
+    }
+}
+
+.button {
+    @include button-styled(rgb(76, 197, 76), box-shadow, 0 1rem 1rem #ccc, 0 1rem 1rem red);
+    @include button-styled(rgb(76, 197, 76), scale, 1.1, 1.4
+    
+    );
+}

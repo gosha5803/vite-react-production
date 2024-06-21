@@ -1,19 +1,17 @@
-import { FC } from "react";
-// import { PhotosSlider } from "../../../widgets/PhotosSlider";
-// import { MainPageLayout } from "../../../widgets/Layouts/MainPageLayout/MainPageLayout";
-import { NavLink } from "react-router-dom";
+import { type FC } from 'react'
+import { useTranslation } from 'react-i18next'
+import { MainPageLayout } from 'widgets/Layouts/MainPageLayout/MainPageLayout'
 
 const MainPage: FC = () => {
-    return(
+    const { t } = useTranslation('')
+
+    return (
         <>
-         {/* <MainPageLayout> */}
-            {/* <PhotosSlider/> */}
-            {/* <button> */}
-                {/* О проекте */}
-                <h1>Main Page</h1>
-                <NavLink to={'/about'}>О проекте</NavLink>
-            {/* </button> */}
-         {/* </MainPageLayout> */}
+            {' '}
+            <MainPageLayout>
+                {t('aboutProject')}
+                <h1>{t('mainPage')}</h1>
+            </MainPageLayout>
         </>
     )
 }

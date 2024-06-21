@@ -7,6 +7,7 @@ export const currentTransformValue = (arrayLength: number, currentElement: numbe
     }
     
     if(calcValue + index < 0) {
+        console.log(arrayLength + calcValue)
         return arrayLength + calcValue
     }
 

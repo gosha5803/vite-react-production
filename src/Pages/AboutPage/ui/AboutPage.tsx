@@ -1,17 +1,12 @@
-import { FC } from "react";
-import { NavLink } from "react-router-dom";
+import { FC } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const AboutPage: FC = () => {
-    return(
+    const { t } = useTranslation('about')
+
+    return (
         <>
-            <h1>
-                About page
-            </h1>
-            <NavLink
-                to={'/'}
-            >
-                Main
-            </NavLink>
+            <h1>{t('aboutPage')}</h1>
         </>
     )
 }

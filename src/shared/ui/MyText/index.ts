@@ -1,0 +1,1 @@
+export { MyText } from './ui/MyText'
