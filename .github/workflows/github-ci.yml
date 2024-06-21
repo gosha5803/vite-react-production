@@ -1,0 +1,9 @@
+name: Actions Demo
+on: [push]
+jobs:
+    Explore Github Actions:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Hello World!"
+            - run: echo "This job is runnig on ${{ runner.os }}"
+            - run: echo "This job was triggered by ${{ github.event_name }}"
