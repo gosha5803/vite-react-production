@@ -1,0 +1,60 @@
+.Button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: var(--font-weight-bold);
+    
+    padding: 10px 20px;
+    border: 1px solid #5264AE;
+    background-color: #fff;
+    color: #5264AE;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
+
+    & svg {
+        width: 2rem;
+
+        & path {
+            stroke: var(--inverted-bg-color);
+        }
+    } 
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.Loading {
+    color: transparent;
+    cursor: default;
+}
+  
+.Loading::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    margin: -15px 0 0 -15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #5264AE;
+    animation: spin 1s linear infinite;
+}
+  
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

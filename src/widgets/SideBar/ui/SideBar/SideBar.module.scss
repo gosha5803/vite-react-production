@@ -16,5 +16,10 @@
     position: absolute;
     bottom: 2rem;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+    button {
+        margin-bottom: 1rem;
+    }
 }

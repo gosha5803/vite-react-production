@@ -1,17 +1,17 @@
-import { FC } from "react";
-// import { PhotosSlider } from "../../../widgets/PhotosSlider";
-// import { MainPageLayout } from "../../../widgets/Layouts/MainPageLayout/MainPageLayout";
+import { type FC } from 'react'
+import { useTranslation } from 'react-i18next'
+import { MainPageLayout } from 'widgets/Layouts/MainPageLayout/MainPageLayout'
 
 const MainPage: FC = () => {
-    return(
+    const { t } = useTranslation('')
+
+    return (
         <>
-         {/* <MainPageLayout> */}
-            {/* <PhotosSlider/> */}
-            {/* <button> */}
-                {/* О проекте */}
-                <h1>Main Page From Master Branch</h1>
-            {/* </button> */}
-         {/* </MainPageLayout> */}
+            {' '}
+            <MainPageLayout>
+                {t('aboutProject')}
+                <h1>{t('mainPage')}</h1>
+            </MainPageLayout>
         </>
     )
 }
